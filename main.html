@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Personal Profile</title>
+  <title>Profile Page</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,88 +11,91 @@
       padding: 0;
       background-color: #f4f4f4;
     }
-
     header {
       background-color: #333;
       color: #fff;
+      padding: 20px;
       text-align: center;
-      padding: 20px;
     }
-
     section {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
       background-color: #fff;
-      border-radius: 8px;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-
-    h1, h2 {
-      color: #333;
+    .profile-pic {
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
     }
-
-    p {
-      line-height: 1.6;
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    li {
+    .skill {
+      width: 30%;
       margin-bottom: 10px;
     }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #333;
-      color: #fff;
+    .skill-name {
+      margin-bottom: 5px;
+    }
+    .skill-bar {
+      height: 20px;
+      background-color: #ddd;
+      border-radius: 10px;
+      margin-bottom: 5px;
+    }
+    .skill-level {
+      height: 100%;
+      border-radius: 10px;
+      background-color: #4caf50;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Your Name</h1>
-    <p>Web Developer & Designer</p>
+    <h1>John Doe</h1>
+    <img class="profile-pic" src="profile-pic.jpg" alt="John Doe">
+    <p>Email: john.doe@example.com</p>
   </header>
-
+  
+  <section>
+    <h2>Profile</h2>
+    <p>Web Developer</p>
+  </section>
+  
   <section>
     <h2>About Me</h2>
-    <p>
-      Welcome to my personal profile! I am a passionate web developer and designer with a focus on creating user-friendly and visually appealing websites.
-    </p>
-
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML5 & CSS3</li>
-      <li>JavaScript & jQuery</li>
-      <li>Responsive Web Design</li>
-      <li>UI/UX Design</li>
-      <!-- Add more skills as needed -->
-    </ul>
-
-    <h2>Projects</h2>
-    <p>
-      Here are a few projects I have worked on:
-      <!-- List your projects with links or descriptions -->
-    </p>
-
-    <h2>Contact Information</h2>
-    <ul>
-      <li>Email: your.email@example.com</li>
-      <li>LinkedIn: linkedin.com/in/yourusername</li>
-      <li>GitHub: github.com/yourusername</li>
-      <!-- Add more contact information as needed -->
-    </ul>
+    <p>I am a passionate web developer with experience in HTML, CSS, and JavaScript. I enjoy creating responsive and user-friendly websites.</p>
   </section>
-
-  <footer>
-    &copy; 2024 Your Name
-  </footer>
-
+  
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">
+        <p class="skill-name">HTML</p>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <p class="skill-name">CSS</p>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 70%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <p class="skill-name">JavaScript</p>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 60%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
